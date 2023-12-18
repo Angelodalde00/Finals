@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Finals11;
 
-/**
- *
- * @author PC-6
- */
-class ourSchool {
+public class ourSchool extends School {
+    ourSchool(String name){
+        super(name);
+    }
+    void ourSchool(){
+        System.out.println(name + "Northern Bukidnon State College");
+    }
+        
+    
     
 }

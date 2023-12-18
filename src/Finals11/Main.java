@@ -7,7 +7,7 @@ public class Main {
          
         School ourSchool_name = new School ("NBSC");
         ourSchool_name.SchoolName();
-        ourSchool_name.();
+        
         
         
        
