@@ -9,8 +9,8 @@ public class School {
 
     }
 
-    void SchoolName() {
-        System.out.println("NBSC");
+   void SchoolName() {
+        System.out.println(name +"Welcome to " + " NORTHERN BUKIDNON STATE COLLEGE");
 
     }
 }
