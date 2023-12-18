@@ -10,16 +10,29 @@ public class Program extends School {
 
     void ProgramName() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("1.  BSTEP program");
-
+        System.out.println("1. BSTEP program");
         System.out.println("2. BSBA program");
-
         System.out.println("3. BSIT program");
-        String it = scanner.nextLine();
+        System.out.println(name + "Please the course that you want");
+        String selectedProgram = scanner.nextLine(); 
+
         
-        System.out.println("Bachelor of Science Teacher Educ");
-        System.out.println("Bachelor of Science Information Tech");
-        System.out.println("Bachelor of Science Business Ad");
+
+        if (selectedProgram.equals("1")) {
+            System.out.println(name + ".Teacher Education Program");
+        } else if (selectedProgram.equals("2")) {
+            System.out.println(name + ".Bachelor in Science Business Administration");
+        } else if (selectedProgram.equals("3")) {
+            System.out.println(name + ".Bachelor in Science in Information Technology");
+        } else {
+            System.out.println("Invalid input. Please enter a value between 1 and 3!");
+        }
+
+        scanner.close(); 
     }
 
+    public static void main(String[] args) {
+        Program program = new Program("Sample School");
+        program.ProgramName();
+    }
 }
